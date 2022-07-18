@@ -33,9 +33,9 @@ const Article = ({ data }) => {
                     {data.p2 && <p>{data.p2}</p>}
 
                     {data.p3 && <p>{data.p3}</p>}
-                    <h1>Group projects</h1>
+
                     {data.projects && <ProjectContainer />}
-                    <h1>Solo project mobile responsive</h1>
+
                     {data.projects && <ProjectContainer solo={true} />}
                     {data.skills && <Skillset />}
                     {data.form && <ContactForm />}

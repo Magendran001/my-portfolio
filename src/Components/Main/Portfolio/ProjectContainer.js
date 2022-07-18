@@ -103,15 +103,20 @@ const ProjectContainer = ({ solo }) => {
 
 
     return (
-        <div
-            className={`${styles.projectContainer} ${!isLight && styles.dark}`}
-        >
+        <div>
+            <div> {solo ? <h1>Solo project mobile responsive</h1> : <h1>Group project</h1>}</div>
+            <div
+                className={`${styles.projectContainer} ${!isLight && styles.dark}`}
+            >
 
-            {!solo ? projects.map((data, index) => {
-                return <ProjectItem data={data} index={index} key={index} />;
-            }) : soloproject.map((data, index) => {
-                return <ProjectItem data={data} index={index} key={index} />;
-            })}
+
+
+                {!solo ? projects.map((data, index) => {
+                    return <ProjectItem data={data} index={index} key={index} />;
+                }) : soloproject.map((data, index) => {
+                    return <ProjectItem data={data} index={index} key={index} />;
+                })}
+            </div>
         </div>
     );
 };
