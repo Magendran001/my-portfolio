@@ -9,6 +9,8 @@ import spacexSm from "../../../Assets/img/Portfolio items/purplle.png";
 import spacexLg from "../../../Assets/img/Portfolio items/purplle.png";
 import bewakoof from "../../../Assets/img/Portfolio items/bewakoof.png"
 import maxfashion from "../../../Assets/img/Portfolio items/maxfashion.png"
+import bewakoofmobile from "../../../Assets/img/Portfolio items/bewakoof.png"
+import stylecraze from "../../../Assets/img/Portfolio items/stylecraze.png"
 
 import ProjectItem from "./ProjectItem";
 
@@ -22,7 +24,7 @@ import react from "../../../Assets/img/logos/react.svg";
 import nodejs from "../../../Assets/img/logos/nodejs.svg";
 import expressjs from "../../../Assets/img/logos/expressjs.svg";
 
-const ProjectContainer = () => {
+const ProjectContainer = ({ solo }) => {
     const { isLight } = useContext(ThemeContext);
     const projects = [
         {
@@ -70,11 +72,44 @@ const ProjectContainer = () => {
         //     tech:[html,css,js],
         // },
     ];
+    const soloproject = [
+        {
+            image: [bewakoofmobile, bewakoofmobile],
+            alt: "Bewakoof_web_clone_react",
+            heading: "Bewakoof_web_clone_react",
+            p1: "Here we have tried to optimize the previous project cloning of Bewakoof by adding backend to it and some more functionality in the frontend.",
+            l1: "https://github.com/Magendran001/bewakoof_react",
+            a1: "Github page for a project.",
+            l2: "https://bewakoofmaggi.netlify.app/",
+            a2: "Bewakoof_web_clone_react",
+            tech: [html, css, js, expressjs, nodejs, react],
+        },
+        {
+            image: [stylecraze, stylecraze],
+            alt: "Bewstlecrazekoof",
+            heading: "Stylecraze website.",
+            p1: "This is a clone of stylecraze.com, where we have used HTML, CSS, and Javascript to achieve this.",
+            l1: "https://github.com/Magendran001/stylecraze",
+            a1: "Github page for a Stylecraze project.",
+            l2: "https://stylecrazeclone.netlify.app/",
+            a2: "Stylecraze website.",
+            tech: [html, css, js],
+        },
+
+
+    ];
+
+
+
+
     return (
         <div
             className={`${styles.projectContainer} ${!isLight && styles.dark}`}
         >
-            {projects.map((data, index) => {
+
+            {!solo ? projects.map((data, index) => {
+                return <ProjectItem data={data} index={index} key={index} />;
+            }) : soloproject.map((data, index) => {
                 return <ProjectItem data={data} index={index} key={index} />;
             })}
         </div>

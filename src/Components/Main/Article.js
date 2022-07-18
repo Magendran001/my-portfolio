@@ -6,6 +6,8 @@ import ProjectContainer from "./Portfolio/ProjectContainer";
 import ContactForm from "./Contact/ContactForm";
 import { Skillset } from "./Skillset/Skill";
 
+
+
 const Article = ({ data }) => {
     const { isLight } = useContext(ThemeContext);
 
@@ -29,12 +31,15 @@ const Article = ({ data }) => {
                     </div>
                     {data.p1 && <p>{data.p1}</p>}
                     {data.p2 && <p>{data.p2}</p>}
-            
+
                     {data.p3 && <p>{data.p3}</p>}
+                    <h1>Group projects</h1>
                     {data.projects && <ProjectContainer />}
-                    {data.skills && <Skillset/>}
+                    <h1>Solo project mobile responsive</h1>
+                    {data.projects && <ProjectContainer solo={true} />}
+                    {data.skills && <Skillset />}
                     {data.form && <ContactForm />}
-             </section>
+                </section>
             </Fade>
         </article>
     );
