@@ -94,6 +94,7 @@ const ProjectContainer = ({ solo }) => {
             l2: "https://stylecrazeclone.netlify.app/",
             a2: "Stylecraze website.",
             tech: [html, css, js],
+            ongoing: true,
         },
 
 

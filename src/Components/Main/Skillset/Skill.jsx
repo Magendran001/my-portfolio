@@ -6,7 +6,8 @@ import {
   SiHtml5,
   SiMaterialui,
   SiExpress,
-  SiRedis
+  SiChakraui
+  
 } from "react-icons/si";
 import { DiCss3, DiMongodb } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
@@ -51,18 +52,18 @@ export const Skillset=()=>{
               <SiExpress />
               <h5>Express</h5>
             </div>
-            {/* <div>
-              <SiRedis />
-              <h5>Redis</h5>
-            </div> */}
+            <div>
+              <SiChakraui />
+              <h5>Chakra ui</h5>
+            </div>
             <div>
               <SiMaterialui />
               <h5>Material Ui</h5>
             </div>
-            <div>
+            {/* <div>
               <BsBootstrap />
               <h5>Bootstrap</h5>
-            </div>
+            </div> */}
             <div>
               <VscGithub />
               <h5>Github</h5>
