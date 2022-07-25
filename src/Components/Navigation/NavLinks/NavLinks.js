@@ -10,7 +10,7 @@ const NavLinks = ({ input, navClass, handleSetMobileMenu, width, isLight }) => {
             className={`${styles[navClass]} ${!isLight && styles.dark}`}
             onClick={width <= 768 ? () => handleSetMobileMenu() : null}
         >{input === "Resume" ? <a
-            href="https://drive.google.com/file/d/11DZWFV11KhNk7-U-o-LbinHGZSHYhqmP/view?usp=sharing"
+            href="https://drive.google.com/file/d/1o-wrZRE0QNk9aaKVtpHhCsNDSe9DQVLd/view"
             target="_blank"
             rel="noreferrer"
             aria-label="My Linkedin resume"

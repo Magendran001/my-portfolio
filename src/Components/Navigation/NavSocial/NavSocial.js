@@ -58,7 +58,7 @@ const NavSocial = ({ socialClass, socialIcons }) => {
             </li>
             <li className={`${styles[socialClass]}`}>
                 <a
-                    href="https://drive.google.com/file/d/11DZWFV11KhNk7-U-o-LbinHGZSHYhqmP/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1o-wrZRE0QNk9aaKVtpHhCsNDSe9DQVLd/view"
                     className="socialIcons"
                     target="_blank"
                     rel="noreferrer"
