@@ -10,7 +10,9 @@ import spacexLg from "../../../Assets/img/Portfolio items/purplle.png";
 import bewakoof from "../../../Assets/img/Portfolio items/bewakoof.png"
 import maxfashion from "../../../Assets/img/Portfolio items/maxfashion.png"
 import bewakoofmobile from "../../../Assets/img/Portfolio items/bewakoof.png"
-import stylecraze from "../../../Assets/img/Portfolio items/stylecraze.png"
+import stylecraze from "../../../Assets/img/Portfolio items/stylecraze.png";
+import Blogpage from "../../../Assets/img/Portfolio items/Blogpage.png"
+
 
 import ProjectItem from "./ProjectItem";
 
@@ -38,17 +40,7 @@ const ProjectContainer = ({ solo }) => {
             a2: "Max_fashion_web_clone",
             tech: [html, css, js],
         },
-        {
-            image: [bewakoof, bewakoof],
-            alt: "Bewakoof",
-            heading: "Bewakoof web clone",
-            p1: "Here we have tried to optimize the previous project cloning of Bewakoof by adding backend to it and some more functionality in the frontend.",
-            l1: "https://github.com/KalyaniSahu879/bewakoofClone",
-            a1: "Github page for a Bewakoof project.",
-            l2: "https://bewakoof-wheat.vercel.app/",
-            a2: "Bewakooflive website.",
-            tech: [html, css, js, expressjs, nodejs],
-        },
+
         // {
         //     image: [pounamunuiSm, pounamunuiLg],
         //     alt: "Youtube web clone",
@@ -73,6 +65,17 @@ const ProjectContainer = ({ solo }) => {
         // },
     ];
     const soloproject = [
+        {
+            image: [Blogpage, Blogpage],
+            alt: "Blog_web_react",
+            heading: "Blog_web_clone_react",
+            p1: "Here we have tried to optimize the previous project cloning of Bewakoof by adding backend to it and some more functionality in the frontend.",
+            l1: "https://github.com/Magendran001/blogfrontend",
+            a1: "Github page for a project.",
+            l2: "https://leafy-douhua-366ea1.netlify.app/",
+            a2: "Blog_web_clone_react",
+            tech: [html, css, js, expressjs, nodejs, react],
+        },
         {
             image: [bewakoofmobile, bewakoofmobile],
             alt: "Bewakoof_web_clone_react",
